@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# snapshot-test
 
 React application bootstrapped with Create React App, designed as a test or demo repository (snapshot testing, UI verification, etc).     [Create React App](https://github.com/facebook/create-react-app).
 
