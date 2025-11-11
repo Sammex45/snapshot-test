@@ -7,11 +7,11 @@ exports[`UserCard Snapshot Tests renders complete user card with all props 1`] =
   <div
     class="user-card__header"
   >
-    <img
-      alt="Samuel Doe's avatar"
-      class="user-card__avatar"
-      src="https://via.placeholder.com/150"
-    />
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
     <div
       class="user-card__status"
     >
@@ -27,7 +27,7 @@ exports[`UserCard Snapshot Tests renders complete user card with all props 1`] =
     <h2
       class="user-card__name"
     >
-      Samuel Doe
+      Victor Uma
     </h2>
     <p
       class="user-card__role"
@@ -43,19 +43,19 @@ exports[`UserCard Snapshot Tests renders complete user card with all props 1`] =
         Email:
       </span>
        
-      Samuel.doe@example.com
+      Victor.uma@example.com
     </p>
     <p
       class="user-card__bio"
     >
-      Senior Software Engineer with 10 years of experience in web development and Technical writing. Passionate about React and testing.
+      Senior Software Engineer with 10 years of experience in web development and technical writing.
     </p>
   </div>
   <div
     class="user-card__footer"
   >
     <button
-      aria-label="Contact Samuel Doe"
+      aria-label="Contact Victor Uma"
       class="user-card__button"
     >
       Contact
@@ -69,7 +69,7 @@ exports[`UserCard Snapshot Tests renders empty state when no user provided 1`] =
   class="user-card user-card--empty"
 >
   <p>
-    No user data available
+    NO USER DATA DETAILS
   </p>
 </div>
 `;
@@ -81,11 +81,11 @@ exports[`UserCard Snapshot Tests renders inactive user 1`] = `
   <div
     class="user-card__header"
   >
-    <img
-      alt="Samuel Doe's avatar"
-      class="user-card__avatar"
-      src="https://via.placeholder.com/150"
-    />
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
     <div
       class="user-card__status"
     >
@@ -101,7 +101,7 @@ exports[`UserCard Snapshot Tests renders inactive user 1`] = `
     <h2
       class="user-card__name"
     >
-      Samuel Doe
+      Victor Uma
     </h2>
     <p
       class="user-card__role"
@@ -117,19 +117,19 @@ exports[`UserCard Snapshot Tests renders inactive user 1`] = `
         Email:
       </span>
        
-      Samuel.doe@example.com
+      Victor.uma@example.com
     </p>
     <p
       class="user-card__bio"
     >
-      Senior Software Engineer with 10 years of experience in web development and Technical writing. Passionate about React and testing.
+      Senior Software Engineer with 10 years of experience in web development and technical writing.
     </p>
   </div>
   <div
     class="user-card__footer"
   >
     <button
-      aria-label="Contact Samuel Doe"
+      aria-label="Contact Victor Uma"
       class="user-card__button"
     >
       Contact
@@ -167,6 +167,22 @@ exports[`UserCard Snapshot Tests renders minimal user card 1`] = `
     >
       John Smith
     </h2>
+    <p
+      class="user-card__role"
+    >
+      Junior Developer
+    </p>
+    <p
+      class="user-card__email"
+    >
+      <span
+        class="user-card__label"
+      >
+        Email:
+      </span>
+       
+      john.smith@example.com
+    </p>
   </div>
   <div
     class="user-card__footer"
@@ -188,11 +204,11 @@ exports[`UserCard Snapshot Tests renders user card in dark theme 1`] = `
   <div
     class="user-card__header"
   >
-    <img
-      alt="Samuel Doe's avatar"
-      class="user-card__avatar"
-      src="https://via.placeholder.com/150"
-    />
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
     <div
       class="user-card__status"
     >
@@ -208,7 +224,7 @@ exports[`UserCard Snapshot Tests renders user card in dark theme 1`] = `
     <h2
       class="user-card__name"
     >
-      Samuel Doe
+      Victor Uma
     </h2>
     <p
       class="user-card__role"
@@ -224,19 +240,19 @@ exports[`UserCard Snapshot Tests renders user card in dark theme 1`] = `
         Email:
       </span>
        
-      Samuel.doe@example.com
+      Victor.uma@example.com
     </p>
     <p
       class="user-card__bio"
     >
-      Senior Software Engineer with 10 years of experience in web development and Technical writing. Passionate about React and testing.
+      Senior Software Engineer with 10 years of experience in web development and technical writing.
     </p>
   </div>
   <div
     class="user-card__footer"
   >
     <button
-      aria-label="Contact Samuel Doe"
+      aria-label="Contact Victor Uma"
       class="user-card__button"
     >
       Contact
@@ -290,6 +306,11 @@ exports[`UserCard Snapshot Tests renders user card without avatar 1`] = `
        
       alice@example.com
     </p>
+    <p
+      class="user-card__bio"
+    >
+      Product Manager passionate about user experience and agile methodologies.
+    </p>
   </div>
   <div
     class="user-card__footer"
@@ -311,11 +332,11 @@ exports[`UserCard Snapshot Tests renders user card without bio 1`] = `
   <div
     class="user-card__header"
   >
-    <img
-      alt="Samuel Doe's avatar"
-      class="user-card__avatar"
-      src="https://via.placeholder.com/150"
-    />
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
     <div
       class="user-card__status"
     >
@@ -331,7 +352,7 @@ exports[`UserCard Snapshot Tests renders user card without bio 1`] = `
     <h2
       class="user-card__name"
     >
-      Samuel Doe
+      Victor Uma
     </h2>
     <p
       class="user-card__role"
@@ -347,14 +368,14 @@ exports[`UserCard Snapshot Tests renders user card without bio 1`] = `
         Email:
       </span>
        
-      Samuel.doe@example.com
+      Victor.uma@example.com
     </p>
   </div>
   <div
     class="user-card__footer"
   >
     <button
-      aria-label="Contact Samuel Doe"
+      aria-label="Contact Victor Uma"
       class="user-card__button"
     >
       Contact
@@ -370,11 +391,11 @@ exports[`UserCard Snapshot Tests renders user card without email 1`] = `
   <div
     class="user-card__header"
   >
-    <img
-      alt="Samuel Doe's avatar"
-      class="user-card__avatar"
-      src="https://via.placeholder.com/150"
-    />
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
     <div
       class="user-card__status"
     >
@@ -390,7 +411,7 @@ exports[`UserCard Snapshot Tests renders user card without email 1`] = `
     <h2
       class="user-card__name"
     >
-      Samuel Doe
+      Victor Uma
     </h2>
     <p
       class="user-card__role"
@@ -400,14 +421,14 @@ exports[`UserCard Snapshot Tests renders user card without email 1`] = `
     <p
       class="user-card__bio"
     >
-      Senior Software Engineer with 10 years of experience in web development and Technical writing. Passionate about React and testing.
+      Senior Software Engineer with 10 years of experience in web development and technical writing.
     </p>
   </div>
   <div
     class="user-card__footer"
   >
     <button
-      aria-label="Contact Samuel Doe"
+      aria-label="Contact Victor Uma"
       class="user-card__button"
     >
       Contact
@@ -423,11 +444,11 @@ exports[`UserCard Snapshot Tests renders with onClick handler 1`] = `
   <div
     class="user-card__header"
   >
-    <img
-      alt="Samuel Doe's avatar"
-      class="user-card__avatar"
-      src="https://via.placeholder.com/150"
-    />
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
     <div
       class="user-card__status"
     >
@@ -443,7 +464,7 @@ exports[`UserCard Snapshot Tests renders with onClick handler 1`] = `
     <h2
       class="user-card__name"
     >
-      Samuel Doe
+      Victor Uma
     </h2>
     <p
       class="user-card__role"
@@ -459,19 +480,19 @@ exports[`UserCard Snapshot Tests renders with onClick handler 1`] = `
         Email:
       </span>
        
-      Samuel.doe@example.com
+      Victor.uma@example.com
     </p>
     <p
       class="user-card__bio"
     >
-      Senior Software Engineer with 10 years of experience in web development and Technical writing. Passionate about React and testing.
+      Senior Software Engineer with 10 years of experience in web development and technical writing.
     </p>
   </div>
   <div
     class="user-card__footer"
   >
     <button
-      aria-label="Contact Samuel Doe"
+      aria-label="Contact Victor Uma"
       class="user-card__button"
     >
       Contact

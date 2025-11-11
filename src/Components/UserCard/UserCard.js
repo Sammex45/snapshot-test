@@ -1,18 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './UserCard.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./UserCard.css";
 
-const UserCard = ({ 
-  user, 
-  showEmail = true, 
-  showBio = true, 
-  theme = 'light',
-  onContactClick 
+const UserCard = ({
+  user,
+  showEmail = true,
+  showBio = true,
+  theme = "light",
+  onContactClick,
 }) => {
   if (!user) {
     return (
       <div className="user-card user-card--empty">
-        <p>No user data available</p>
+        <p>NO USER DATA DETAILS</p>
       </div>
     );
   }
@@ -23,9 +23,9 @@ const UserCard = ({
     <div className={`user-card user-card--${theme}`}>
       <div className="user-card__header">
         {avatarUrl ? (
-          <img 
-            src={avatarUrl} 
-            alt={`${name}'s avatar`} 
+          <img
+            src={avatarUrl}
+            alt={`${name}'s avatar`}
             className="user-card__avatar"
           />
         ) : (
@@ -34,10 +34,14 @@ const UserCard = ({
           </div>
         )}
         <div className="user-card__status">
-          <span 
-            className={`status-indicator ${isActive ? 'status-indicator--active' : 'status-indicator--inactive'}`}
+          <span
+            className={`status-indicator ${
+              isActive
+                ? "status-indicator--active"
+                : "status-indicator--inactive"
+            }`}
           />
-          {isActive ? 'Active' : 'Inactive'}
+          {isActive ? "Active" : "Inactive"}
         </div>
       </div>
 
@@ -51,13 +55,11 @@ const UserCard = ({
           </p>
         )}
 
-        {showBio && bio && (
-          <p className="user-card__bio">{bio}</p>
-        )}
+        {showBio && bio && <p className="user-card__bio">{bio}</p>}
       </div>
 
       <div className="user-card__footer">
-        <button 
+        <button
           onClick={onContactClick}
           className="user-card__button"
           aria-label={`Contact ${name}`}
@@ -76,12 +78,12 @@ UserCard.propTypes = {
     bio: PropTypes.string,
     avatarUrl: PropTypes.string,
     role: PropTypes.string,
-    isActive: PropTypes.bool
+    isActive: PropTypes.bool,
   }),
   showEmail: PropTypes.bool,
   showBio: PropTypes.bool,
-  theme: PropTypes.oneOf(['light', 'dark']),
-  onContactClick: PropTypes.func
+  theme: PropTypes.oneOf(["light", "dark"]),
+  onContactClick: PropTypes.func,
 };
 
 export default UserCard;
