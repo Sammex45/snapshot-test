@@ -19,6 +19,8 @@
     "test:coverage": "jest --coverage",
     "test:update": "jest --updateSnapshot",
     "test:lambdatest": "node test-runner.js",
+    "test:lambdatest:smartui": "npx smartui --config .smartui.json exec -- npm run test:lambdatest",
+    "test:smartui": "npx smartui --config .smartui.json exec -- jest src/lambdatest.spec.js",
     "test:ci": "jest --ci --coverage --maxWorkers=2",
     "eject": "react-scripts eject"
   },
@@ -39,5 +41,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/preset-react": "^7.23.0",
+    "@lambdatest/smartui-cli": "^4.1.43",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "babel-jest": "^29.7.0"
   }
 }

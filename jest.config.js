@@ -13,4 +13,12 @@ module.exports = {
   transform: {
     "^.+\\.(js|jsx)$": "babel-jest",
   },
+  // Transform ES modules from LambdaTest and SmartUI packages
+  // Also transform their dependencies (axios, etc.) that might use ES modules
+  transformIgnorePatterns: [
+    "node_modules/(?!(@lambdatest|smartui|axios)/)",
+  ],
+  // Add module directories to help Jest find modules
+  moduleDirectories: ["node_modules", "<rootDir>"],
+  testPathIgnorePatterns: ["/node_modules/"],
 };
