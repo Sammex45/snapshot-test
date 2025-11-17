@@ -24,7 +24,8 @@ try {
         $isRunning = $true
         Write-Host "React app is running!" -ForegroundColor Green
     }
-} catch {
+}
+catch {
     Write-Host "React app is NOT running" -ForegroundColor Red
     Write-Host ""
     Write-Host "Please start the React app first:" -ForegroundColor Yellow
@@ -58,7 +59,8 @@ try {
                 Write-Host "React app is now running!" -ForegroundColor Green
                 break
             }
-        } catch {
+        }
+        catch {
             Write-Host "." -NoNewline -ForegroundColor Gray
         }
     }
